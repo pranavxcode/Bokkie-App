@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "575286239196",
+    "project_id": "bokkie-app",
+    "storage_bucket": "bokkie-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575286239196:android:b3e1837adcb0b0de7ef919",
+        "android_client_info": {
+          "package_name": "com.bokkie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575286239196-k7h0v9ge3n88kvl0jipce4mn3f1352ic.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bokkie",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "575286239196-00b6le1snu8oij8mceektf9hdrvojloj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzrwXpoGzh8odakBaoFz65L2ko8tmGNsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575286239196-00b6le1snu8oij8mceektf9hdrvojloj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
