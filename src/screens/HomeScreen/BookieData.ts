@@ -15,26 +15,26 @@ const BookieData = [
         carouselId: ""
     },
     {
-        heading: "Yves Saint Laurent",
-        subtitle: "Fall 20 Collection by Anthony Vaccarello",
+        heading: "Handbag Heaven",
+        subtitle: "Bags you need to buy",
         image: ImagePathsStrings.homeScreenImages.Keypoint2,
         carouselId: "23611701"
     },
     {
-        heading: "CHANEL",
-        subtitle: "Enter the world of CHANEL",
+        heading: "Fashion Finds",
+        subtitle: "Our latest fashion picks",
         image: ImagePathsStrings.homeScreenImages.Keypoint3,
         carouselId: "23611693"
     },
     {
-        heading: "LE CREUSET",
-        subtitle: "Make your table cheerful & colorful",
+        heading: "Footwear Favourites",
+        subtitle: "Boots, heels, sneakers & more",
         image: ImagePathsStrings.homeScreenImages.Keypoint4,
         carouselId: "23611692"
     },
     {
-        heading: "CHANEL",
-        subtitle: "Enter the world of CHANEL",
+        heading: "Home Living",
+        subtitle: "Furniture must haves",
         image: ImagePathsStrings.homeScreenImages.Keypoint5,
         carouselId: "23611691"
     },

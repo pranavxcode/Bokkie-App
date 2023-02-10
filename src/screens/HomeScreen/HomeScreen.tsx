@@ -13,12 +13,10 @@ export const StatusBarHeight = NativeModules.StatusBarManager.HEIGHT;
 const HomeScreen = () => {
 
   const openCarousel = async (carouselId: string) => {
-    console.log("running", carouselId);
     await Intercom.displayCarousel(carouselId);
   }
 
   const openMessanger = async () => {
-    const unIdentifiedUser = Intercom.loginUnidentifiedUser();
     await Intercom.displayMessenger();
   }
 
@@ -35,8 +33,13 @@ const HomeScreen = () => {
       }
         style={styles.keyPointDiv} >
         <Image
-          style={styles.keyPointLogo}
+          style={[styles.keyPointLogo,index==1&&{
+            height: dimensions.width*0.105,
+            width: dimensions.width*0.19,
+            marginHorizontal: 0
+          }]}
           source={item.image}
+          resizeMode="contain"
         />
         <View>
           <Text style={styles.keyPointHeading}>
@@ -125,7 +128,7 @@ const styles = StyleSheet.create({
   keyPointDiv: {
     backgroundColor: ColorStrings.primaryBackground,
     marginVertical: dimensions.height * 0.0185,
-    paddingVertical: dimensions.height * 0.021,
+    paddingVertical: dimensions.height * 0.022,
     marginHorizontal: 25,
     borderRadius: 9,
     shadowColor: ColorStrings.secondaryColor,
@@ -143,18 +146,20 @@ const styles = StyleSheet.create({
     fontFamily: FontFamilyNames.primaryFontBold,
     fontSize: FontSizes.medium,
     paddingVertical: 2,
+    width:dimensions.width*0.65,
     color: ColorStrings.secondaryColor
   },
   keyPointSubtitle: {
     fontFamily: FontFamilyNames.primaryFontRegular,
     fontSize: FontSizes.small,
     paddingVertical: 0.5,
+    width:dimensions.width*0.65,
     color: ColorStrings.secondaryColorLight
   },
   keyPointLogo: {
-    height: 45,
-    width: 45,
-    marginHorizontal: 15
+    height: dimensions.width*0.105,
+    width: dimensions.width*0.105,
+    marginHorizontal: dimensions.width*0.045
   }
 })
 

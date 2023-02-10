@@ -1,27 +1,27 @@
-// import { useEffect } from "react"
-// import { Alert } from "react-native"
-// import messaging from "@react-native-firebase/messaging"
+import { useEffect } from "react"
+import { AppState } from "react-native"
 import HomeScreen from "./src/screens/HomeScreen/HomeScreen"
+import Intercom from "@intercom/intercom-react-native"
 
 const App = () => {
 
-  // useEffect(() => {
+  useEffect(() => {
+    const intercomListner = AppState.addEventListener(
+      'change',
+      (nextAppState) =>
+        nextAppState === 'active' && Intercom.handlePushMessage()
+    );
+    return () => intercomListner.remove();
+  }
+  , [])
 
-  // getDeviceToken();
+  const registerUser = async () => {
+    await Intercom.loginUnidentifiedUser()
+  }
 
-  // const unsubscribe = messaging().onMessage(async remoteMessage => {
-  //   Alert.alert('A new FCM message arrived!', JSON.stringify(remoteMessage));
-  // });
-
-  // return unsubscribe;
-
-  // }, [])
-
-  // const getDeviceToken = async () => {
-  //   const token = await messaging().getToken();
-  //   console.log("tokenn\n\n");
-  //   console.log(token)
-  // }
+  useEffect(() => {
+    registerUser();
+  }, [])
 
   return (
     <HomeScreen />

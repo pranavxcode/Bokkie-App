@@ -7,17 +7,25 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:575286239196:android:b3e1837adcb0b0de7ef919",
+        "mobilesdk_app_id": "1:575286239196:android:4e872d6a45ea70de7ef919",
         "android_client_info": {
-          "package_name": "com.bokkie"
+          "package_name": "com.nbokkie.sys"
         }
       },
       "oauth_client": [
         {
-          "client_id": "575286239196-k7h0v9ge3n88kvl0jipce4mn3f1352ic.apps.googleusercontent.com",
+          "client_id": "575286239196-fcv9an1dao5a61q0t2umif72n70sq9tb.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.bokkie",
+            "package_name": "com.nbokkie.sys",
+            "certificate_hash": "79dcb19f770a3be053526aa10d7c0ab1f2df412e"
+          }
+        },
+        {
+          "client_id": "575286239196-nfj4afgtlj8rrs6tl2ikoug0lu1fppc5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nbokkie.sys",
             "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
           }
         },
@@ -37,6 +45,117 @@
             {
               "client_id": "575286239196-00b6le1snu8oij8mceektf9hdrvojloj.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "575286239196-435rpu7f0m11sgqhrk3bd64u2o7ea31e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.Golfbru"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575286239196:android:dc405483a49e815e7ef919",
+        "android_client_info": {
+          "package_name": "com.ngolfbru.sys"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575286239196-028qpkh7a2ajlrtsd8alh499ak029v6v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ngolfbru.sys",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "575286239196-7bt2848i29f8peho0bvgvs07p0b5g629.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ngolfbru.sys",
+            "certificate_hash": "6a73b4ccd23d7ca5cbe02fa4794602b58413d4b1"
+          }
+        },
+        {
+          "client_id": "575286239196-00b6le1snu8oij8mceektf9hdrvojloj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzrwXpoGzh8odakBaoFz65L2ko8tmGNsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575286239196-00b6le1snu8oij8mceektf9hdrvojloj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "575286239196-435rpu7f0m11sgqhrk3bd64u2o7ea31e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.Golfbru"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575286239196:android:f9339ed98d2b7f817ef919",
+        "android_client_info": {
+          "package_name": "com.njacar.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575286239196-fjehpm0pvavvrgfac8fv8jddtpr08rqs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.njacar.app",
+            "certificate_hash": "2750cf0cfd4cdded8c6dbfd503776f1d5cee12c8"
+          }
+        },
+        {
+          "client_id": "575286239196-vmucalokmk0j8f8ev4ucv2a58f8l7qqm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.njacar.app",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "575286239196-00b6le1snu8oij8mceektf9hdrvojloj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzrwXpoGzh8odakBaoFz65L2ko8tmGNsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575286239196-00b6le1snu8oij8mceektf9hdrvojloj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "575286239196-435rpu7f0m11sgqhrk3bd64u2o7ea31e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.Golfbru"
+              }
             }
           ]
         }

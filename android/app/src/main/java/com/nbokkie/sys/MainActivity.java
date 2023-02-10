@@ -1,4 +1,4 @@
-package com.bokkie;
+package com.nbokkie.sys;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

@@ -1,4 +1,4 @@
-package com.bokkie;
+package com.nbokkie.sys;
 
 import android.app.Application;
 import com.facebook.react.PackageList;
@@ -59,7 +59,9 @@ public class MainApplication extends Application implements ReactApplication {
       // If you opted-in for the New Architecture, we load the native entry point for this app.
       DefaultNewArchitectureEntryPoint.load();
     }
+
       IntercomModule.initialize(this, "android_sdk-904d961b94ee4d5776896a4a540d492033269735", "n1lrva7n");
+//      IntercomModule.initialize(this, "android_sdk-904d961b94ee4d5776896a4a540d492033269735", "n1lrva7n");
 //      IntercomModule.initialize(this, "android_sdk-904d961b94ee4d5776896a4a540d492033269735", "n1lrva7n");
 //    IntercomModule.initialize(this, "api key", "app Id");
 

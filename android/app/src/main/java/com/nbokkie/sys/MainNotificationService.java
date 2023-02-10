@@ -1,4 +1,4 @@
-package com.bokkie;
+package com.nbokkie.sys;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;

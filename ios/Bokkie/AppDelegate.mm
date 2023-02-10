@@ -4,6 +4,7 @@
 
 #import <IntercomModule.h>
 #import <Firebase.h>
+#import <UserNotifications/UserNotifications.h>
 
 @implementation AppDelegate
 
@@ -19,6 +20,13 @@
   if ([FIRApp defaultApp] == nil) {
       [FIRApp configure];
     }
+  
+  UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+      [center requestAuthorizationWithOptions:(UNAuthorizationOptionAlert + UNAuthorizationOptionSound)
+                            completionHandler:^(BOOL granted, NSError *_Nullable error) {
+                            }];
+      [[UIApplication sharedApplication] registerForRemoteNotifications];
+  
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
@@ -39,6 +47,10 @@
 - (BOOL)concurrentRootEnabled
 {
   return true;
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    [IntercomModule setDeviceToken:deviceToken];
 }
 
 @end
