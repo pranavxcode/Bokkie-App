@@ -1,11 +1,11 @@
 import Intercom from "@intercom/intercom-react-native"
-import { FlatList, Image, StyleSheet, Text, TouchableOpacity, View, Dimensions, NativeModules } from "react-native"
+import { FlatList, Image, StyleSheet, Text, TouchableOpacity, View, Dimensions, NativeModules, Linking } from "react-native"
 import AppStatusBar from "../../components/global/AppStatusBar"
 import ColorStrings from "../../strings/ColorStrings"
 import FontFamilyNames from "../../strings/FontFamilyNames"
 import FontSizes from "../../strings/FontSizes"
 import ImagePathsStrings from "../../strings/ImagePathsStrings"
-import Data, { DataProps } from "./BookieData"
+import Data, { BOKKIE_WEBSITE_URL, DataProps } from "./BookieData"
 
 export const dimensions = Dimensions.get("screen");
 export const StatusBarHeight = NativeModules.StatusBarManager.HEIGHT;
@@ -18,6 +18,10 @@ const HomeScreen = () => {
 
   const openMessanger = async () => {
     await Intercom.displayMessenger();
+  }
+
+  const openTermsAndConditions = () => {
+    Linking.openURL(BOKKIE_WEBSITE_URL);
   }
 
   const renderPoints = (
@@ -33,9 +37,9 @@ const HomeScreen = () => {
       }
         style={styles.keyPointDiv} >
         <Image
-          style={[styles.keyPointLogo,index==1&&{
-            height: dimensions.width*0.105,
-            width: dimensions.width*0.19,
+          style={[styles.keyPointLogo, index == 1 && {
+            height: dimensions.width * 0.105,
+            width: dimensions.width * 0.19,
             marginHorizontal: 0
           }]}
           source={item.image}
@@ -75,7 +79,7 @@ const HomeScreen = () => {
         <Text style={styles.termsAndConditionbarText}>
           Visit our
         </Text>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={openTermsAndConditions}>
           <Text style={[styles.termsAndConditionbarText, styles.websiteButton]}>
             {`${" website "}`}
           </Text>
@@ -146,20 +150,20 @@ const styles = StyleSheet.create({
     fontFamily: FontFamilyNames.primaryFontBold,
     fontSize: FontSizes.medium,
     paddingVertical: 2,
-    width:dimensions.width*0.65,
+    width: dimensions.width * 0.65,
     color: ColorStrings.secondaryColor
   },
   keyPointSubtitle: {
     fontFamily: FontFamilyNames.primaryFontRegular,
     fontSize: FontSizes.small,
     paddingVertical: 0.5,
-    width:dimensions.width*0.65,
+    width: dimensions.width * 0.65,
     color: ColorStrings.secondaryColorLight
   },
   keyPointLogo: {
-    height: dimensions.width*0.105,
-    width: dimensions.width*0.105,
-    marginHorizontal: dimensions.width*0.045
+    height: dimensions.width * 0.105,
+    width: dimensions.width * 0.105,
+    marginHorizontal: dimensions.width * 0.045
   }
 })
 

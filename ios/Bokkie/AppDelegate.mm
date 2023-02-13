@@ -5,6 +5,7 @@
 #import <IntercomModule.h>
 #import <Firebase.h>
 #import <UserNotifications/UserNotifications.h>
+#import "RNSplashScreen.h"
 
 @implementation AppDelegate
 
@@ -26,6 +27,8 @@
                             completionHandler:^(BOOL granted, NSError *_Nullable error) {
                             }];
       [[UIApplication sharedApplication] registerForRemoteNotifications];
+  
+//  [RNSplashScreen show];
   
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }

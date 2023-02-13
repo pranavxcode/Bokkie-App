@@ -7,6 +7,8 @@ export interface DataProps {
     carouselId: string
 }
 
+export const BOKKIE_WEBSITE_URL = `http://bokkie.co/`;
+
 const BookieData = [
     {
         heading: "Live Chat and Bottie... ",
